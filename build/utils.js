@@ -64,7 +64,7 @@ exports.cssLoaders = function (options) {
       {
         loader: 'sass-resources-loader',
         options: {
-          resources: path.resolve(__dirname, '../src/assets/stylesheets/global/**/*.scss')
+          resources: path.resolve(__dirname, '../src/assets/stylesheets/_global/**/*.scss')
         }
       }
     ),
