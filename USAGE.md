@@ -1,4 +1,4 @@
-### Dependent
+### Dependents
 
 > support `scss`
 ```
