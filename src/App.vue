@@ -11,8 +11,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   min-height: 100%;
+  background: $color-page-main;
 }
 </style>

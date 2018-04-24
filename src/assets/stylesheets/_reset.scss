@@ -1,8 +1,8 @@
 *, *:before, *:after { box-sizing: inherit; outline: none; }
 * { margin: 0; padding: 0; }
-html { box-sizing: border-box; }
+html { box-sizing: border-box; color: $color-text-default }
 html, body { height: 100%; overflow: auto; }
-body { background-color: #F5F5F5; font-size: 12px; -webkit-font-smoothing: antialiased; font-family: arial, sans-serif; }
+body { background-color: $color-page-bg; font-size: 12px; -webkit-font-smoothing: antialiased; font-family: arial, sans-serif; }
 
 ol, ul { list-style: none; }
 
