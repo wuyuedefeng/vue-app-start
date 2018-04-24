@@ -1,0 +1,63 @@
+@mixin ui-message-box {
+  ._ui-dialog {
+    @include dialog-mask;
+    @include animation-zoom-in;
+    .message-box {
+      min-width: pxRem(130);
+      width: 80%;
+      @include tablet-and-desktop {
+        max-width: 400px;
+      }
+      padding-top: pxRem(15);
+      background: rgba(40,40,40,.8);
+      text-align: center;
+      border-radius: pxRem(3);
+      background: #fff;
+      animation: animation-zoom-in .12s ease-in forwards;
+
+      .title {
+        font-size: pxRem(16);
+        padding-bottom: pxRem(7);
+        font-weight: normal;
+        color: $color-text-title;
+      }
+      .content {
+        padding: 0 pxRem(15) pxRem(15);
+        line-height: pxRem(22);
+        word-break: break-all;
+        color: #888;
+        font-size: pxRem(14);
+      }
+      .ops {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $color-border-default;
+        font-size: pxRem(15);
+
+        .btn {
+          flex: 1;
+          display: block;
+          text-align: center;
+          line-height: pxRem(40);
+          @include tap;
+
+          &:not(:last-child) {
+            border-right: 1px solid $color-border-default;
+          }
+
+          &.btn-disabled {
+            @include disabled
+          }
+
+          &.btn-cancel {
+            color: $color-dark;
+          }
+
+          &.btn-confirm {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}

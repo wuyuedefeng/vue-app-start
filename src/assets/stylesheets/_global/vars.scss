@@ -14,17 +14,22 @@ $_uiRemDesignSketchWidth: 375 !default;
 
 //////////////////////////////////////////////////////////////////
 // color config
-$color-page-bg: #f5f5f5;
-$color-page-main: #fff;
+$color-page-bg: #f5f5f5 !default;
+$color-page-main: #fff !default;
 
-$color-text-default: #484746;
+$color-text-default: #484746 !default;
+$color-text-title: #444 !default;
+$color-text-desc: #999 !default;
 
-$color-primary: #26a2ff;
-$color-danger: #ef4f4f;
-$color-warning: #ffb400;
-$color-white: #fff;
-$color-stable: #f5f5f5;
-$color-disable: #ccc;
-$color-dark: #484746;
-$color-hollow: rgba(0, 0, 0, 0); // 镂空
-$color-default: #f6f8fa;
+$color-border-default: #ddd !default;
+
+$color-primary: #26a2ff !default;
+$color-danger: #ef4f4f !default;
+$color-warning: #ffb400 !default;
+$color-white: #fff !default;
+$color-stable: #f5f5f5 !default;
+$color-disable: #ccc !default;
+$color-dark: #484746 !default;
+$color-hollow: rgba(0, 0, 0, 0) !default; // 镂空
+$color-default: #f6f8fa !default;
+

@@ -1,0 +1,40 @@
+/* 动画的名字，播放时间，延时时间，动画效果，播放次数，播放顺序*/
+/* anim2     3s       2s      linear   infinite alternate; */
+//@mixin rotate($class, $duration:1.2s,  $delay: 0, $function: linear, $count: infinite) {
+//  @keyframes rotate {
+//    from {
+//      transform:rotate(0deg)
+//    }
+//    to {
+//      transform:rotate(360deg)
+//    }
+//  }
+//  .#{$class} {
+//    transition: rotate $duration $delay $function, $count;
+//  }
+//}
+//@include rotate($class: 'slogan', $delay: 1s, $duration: .8s)
+
+@mixin animation-rotate() {
+  @keyframes animation-rotate {
+    from {
+      transform:rotate(0deg)
+    }
+    to {
+      transform:rotate(360deg)
+    }
+  }
+}
+
+@mixin animation-zoom-in() {
+  @keyframes animation-zoom-in {
+    from {
+      opacity: 0;
+      transform: scale3d(0, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
