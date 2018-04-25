@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import './assets/stylesheets/application.scss'
+// 仅rem模式引入 默认值 375, 于scss中$_uiRemDesignSketchWidth保持一致，这里的375指：在375宽度的屏幕 1px = 1rem
+require('./components/_ui/javascripts/rem.js')(375)
 
 Vue.config.productionTip = false
 

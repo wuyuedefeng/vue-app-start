@@ -12,6 +12,10 @@ npm install
 npm run dev
 ```
 
+## PX & Rem
+default: `px`, if wanna use `rem`, please change `/src/assets/stylesheets/_global/vars.scss`
+`$_uiUseRem`：`true`  
+
 ## Components
 
 - dialog/MessageBox

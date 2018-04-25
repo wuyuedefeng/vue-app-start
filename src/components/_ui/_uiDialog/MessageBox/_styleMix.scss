@@ -6,7 +6,7 @@
       min-width: pxRem(130);
       width: 80%;
       @include tablet-and-desktop {
-        max-width: 400px;
+        max-width: pxRem(400);
       }
       padding-top: pxRem(15);
       background: rgba(40,40,40,.8);

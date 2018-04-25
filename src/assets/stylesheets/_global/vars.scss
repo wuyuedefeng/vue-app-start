@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////
 // px or rem config
 $_uiUseRem: false !default;
-// rem模式 该值应该和rem.js函数传递的值保持一致
+// rem模式 该值应该和rem.js函数传递的值保持一致, 值参考拿到效果图的宽度
 $_uiRemDesignSketchWidth: 375 !default;
 @function pxRem($px) {
   @if $_uiUseRem {
