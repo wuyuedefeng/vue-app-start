@@ -5,27 +5,27 @@
     border: none;
     padding: 0 pxRem(14);
     border-radius: 3px;
-    box-shadow: 0 0 1px #b8bbbf;
+    box-shadow: 0 0 1px $color-border-default;
     font-weight: bolder;
     cursor: pointer;
 
     @include animation-rotate;
     // size
     &.large {
-      line-height: pxRem(49);
-      font-size: pxRem(17);
+      line-height: pxRem(50);
+      font-size: pxRem(18);
     }
     &.normal {
-      line-height: pxRem(39);
+      line-height: pxRem(38);
       font-size: pxRem(16);
     }
     &.small {
       line-height: pxRem(29);
-      font-size: pxRem(15);
+      font-size: pxRem(14);
     }
     &.mini {
       line-height: pxRem(24);
-      font-size: pxRem(14);
+      font-size: pxRem(13);
     }
     // primary
     &.default {
@@ -66,7 +66,7 @@
 
     i[class*="loading"] {
       display: inline-block;
-      font-size: pxRem(15);
+      font-size: pxRem(14);
       animation: animation-rotate 1.2s linear infinite;
     }
   }
