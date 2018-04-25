@@ -21,7 +21,7 @@ default: `px`, if wanna use `rem`, please change `/src/assets/stylesheets/_globa
 `$_uiUseRem`：`true`  
 
 ## Components
-
+- Button
 - dialog/MessageBox
 - dialog/ToastBox
 - dialog/ActionSheet

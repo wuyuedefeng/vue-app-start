@@ -12,3 +12,14 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+  ul {
+    padding: 5px;
+    li {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 40px;
+    }
+  }
+</style>
