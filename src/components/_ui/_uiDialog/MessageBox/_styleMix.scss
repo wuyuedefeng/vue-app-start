@@ -1,4 +1,4 @@
-@mixin ui-message-box {
+@mixin ui-dialog-message-box {
   ._ui-dialog {
     @include dialog-mask;
     @include animation-zoom-in;

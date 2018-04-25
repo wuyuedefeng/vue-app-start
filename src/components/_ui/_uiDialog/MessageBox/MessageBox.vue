@@ -77,5 +77,5 @@ export default {
 
 <style lang="scss" scoped>
   @import "styleMix";
-  @include ui-message-box;
+  @include ui-dialog-message-box;
 </style>

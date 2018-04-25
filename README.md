@@ -15,3 +15,4 @@ npm run dev
 ## Components
 
 - dialog/MessageBox
+- dialog/ToastBox
