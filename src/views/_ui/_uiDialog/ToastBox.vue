@@ -3,6 +3,7 @@
     <button @click="usage1">usage1</button>
     <button @click="usage2">usage2</button>
     <button @click="usage3">usage3</button>
+    <hr>
     <a href="https://github.com/wuyuedefeng/vue-app-start/blob/develop/src/views/_ui/_uiDialog/ToastBox.vue" target="_blank">demo code</a>
   </div>
 </template>

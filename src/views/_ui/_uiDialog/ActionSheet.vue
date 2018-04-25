@@ -1,6 +1,7 @@
 <template>
   <div>
     <button @click="showActionSheet">show action sheet</button>
+    <hr>
     <a href="https://github.com/wuyuedefeng/vue-app-start/blob/develop/src/views/_ui/_uiDialog/ActionSheet.vue" target="_blank">demo code</a>
   </div>
 </template>

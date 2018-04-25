@@ -5,6 +5,7 @@
       <button @click="showConfirm">show Confirm</button>
       <button @click="showCustomConfirm">show Custom Confirm</button>
     </div>
+    <hr>
     <a href="https://raw.githubusercontent.com/wuyuedefeng/vue-app-start/master/src/views/_ui/_uiDialog/MessageBox.vue" target="_blank">demo code</a>
   </div>
 </template>

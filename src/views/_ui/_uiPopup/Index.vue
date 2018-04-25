@@ -45,6 +45,9 @@
     <ui-popup from="bottom" page style="background: #0ff" ref="fromBottomFullPage">
       <div @click="$refs['fromBottomFullPage'].close()">--- closePage ---</div>
     </ui-popup>
+
+    <hr>
+    <a href="https://github.com/wuyuedefeng/vue-app-start/blob/develop/src/views/_ui/_uiPopup/Index.vue" target="_blank">demo code</a>
   </div>
 </template>
 
