@@ -5,7 +5,7 @@
       <button @click="showConfirm">show Confirm</button>
       <button @click="showCustomConfirm">show Custom Confirm</button>
     </div>
-    <a href="https://raw.githubusercontent.com/wuyuedefeng/vue-app-start/master/src/views/_ui/_uiDialog/MessageBox.vue" target="_blank">source code</a>
+    <a href="https://raw.githubusercontent.com/wuyuedefeng/vue-app-start/master/src/views/_ui/_uiDialog/MessageBox.vue" target="_blank">demo code</a>
   </div>
 </template>
 
@@ -13,6 +13,7 @@
 import Vue from 'vue'
 import UiDialog from '@/components/_ui/_uiDialog'
 Vue.use(UiDialog)
+// UiDialog === this._ui._uiDialog
 export default {
   methods: {
     showAlert () {
