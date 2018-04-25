@@ -2,6 +2,10 @@
 
 > A Vue.js project
 
+px demo: http://examples.itrydo.com/vue-app-start/px/index.html
+
+rem demo: http://examples.itrydo.com/vue-app-start/rem/index.html
+
 ## Run
 
 ``` bash

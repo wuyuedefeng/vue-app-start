@@ -9,7 +9,9 @@
     "start": "npm run dev",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy-px": "npm run build && scp -r /Users/mars/Desktop/zhan/vue-app-start/dist/* deploy@47.93.21.147:/mnt/www/examples/vue-app-start/px",
+    "deploy-rem": "npm run build && scp -r /Users/mars/Desktop/zhan/vue-app-start/dist/* deploy@47.93.21.147:/mnt/www/examples/vue-app-start/rem"
   },
   "dependencies": {
     "vue": "^2.5.2",
