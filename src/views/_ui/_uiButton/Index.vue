@@ -32,6 +32,7 @@
       <ui-button type="danger" size="small" @click="hi(1)">small</ui-button>
       <ui-button type="primary" size="mini" @click="hi(2)">mini</ui-button>
     </div>
+    <a href="https://github.com/wuyuedefeng/vue-app-start/blob/master/src/views/_ui/_uiButton/Index.vue" target="_blank">demo code</a>
   </div>
 </template>
 
