@@ -17,14 +17,17 @@ MessageBox.install = function (Vue, options) {
     const component = instance.$mount()
     options['onEl'].appendChild(component.$el)
     pageScroll.lock(component.$el)
-
+    // 改变url路径移除组件
     const messageBox = instance.$children[0]
     function hashChange () {
       pageScroll.unlock()
       const el = messageBox.$el
       el.parentNode && el.parentNode.removeChild(el)
+      window.removeEventListener('hashchange', hashChange)
+      window.removeEventListener('popstate', hashChange)
     }
     window.addEventListener('hashchange', hashChange)
+    window.addEventListener('popstate', hashChange)
     // methods
     messageBox.close = (trigger) => {
       const el = messageBox.$el
