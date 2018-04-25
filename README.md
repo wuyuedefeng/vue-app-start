@@ -22,6 +22,7 @@ default: `px`, if wanna use `rem`, please change `/src/assets/stylesheets/_globa
 
 ## Components
 - Button
+- Popup
 - dialog/MessageBox
 - dialog/ToastBox
 - dialog/ActionSheet
