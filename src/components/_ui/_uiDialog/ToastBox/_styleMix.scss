@@ -18,8 +18,7 @@
       .icon {
         display: inline-block;
         font-size: pxRem(24);
-        margin-top: -2px;
-        margin-right: 5px;
+        margin-top: pxRem(-2);
 
         &[class*="loading"] {
           animation: animation-rotate 1.2s linear infinite;
@@ -31,6 +30,7 @@
         font-size: pxRem(16);
         line-height: pxRem(20);
         word-break: break-all;
+        padding: 0 pxRem(3);
       }
     }
   }

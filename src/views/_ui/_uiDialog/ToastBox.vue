@@ -16,10 +16,10 @@ Vue.use(UiDialog)
 export default {
   methods: {
     usage1 () {
-      let loading1 = this._ui._uiDialog.ToastBox.new({message: '很快就好了', callback: () => { console.log('closed') }})
+      let loading1 = this._ui._uiDialog.ToastBox.new({icon: 'icon-loading', callback: () => { console.log('closed') }})
       setTimeout(function () {
         loading1.close()
-      }, 3000)
+      }, 30000)
     },
     // new 几个相同的identify，就需要调用多少次 close 方法
     usage2 () {
