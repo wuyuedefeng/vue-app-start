@@ -23,6 +23,7 @@ default: `px`, if wanna use `rem`, please change `/src/assets/javascripts/_share
 ## Components
 - Button
 - Radio
+- Checkbox
 - Popup
 - dialog/MessageBox
 - dialog/ToastBox

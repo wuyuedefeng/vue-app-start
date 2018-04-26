@@ -1,9 +1,9 @@
 <template>
   <div>
     <ui-radio-group v-model="nowSelect" style="padding: 15px">
-      <ui-radio val="333"></ui-radio>
-      <ui-radio val="444"></ui-radio>
-      <ui-radio val="555" disabled>I'm 555</ui-radio>
+      <ui-radio val="111">真棒</ui-radio>
+      <ui-radio val="222"></ui-radio>
+      <ui-radio val="333" disabled>I'm 555</ui-radio>
     </ui-radio-group>
     now select value: {{nowSelect}}
     <hr>
@@ -16,7 +16,7 @@ import '@/components/_ui/_uiRadio'
 export default {
   data () {
     return {
-      nowSelect: '555'
+      nowSelect: '333'
     }
   }
 }

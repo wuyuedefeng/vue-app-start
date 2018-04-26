@@ -8,11 +8,17 @@ export default {
     })
     // RadioGroup Radio
     Vue.component('UiRadioGroup', (resolve) => {
-      resolve(require('./Radio/RadioGroup.vue'))
+      resolve(require('./_uiRadio/RadioGroup.vue'))
     })
     Vue.component('UiRadio', (resolve) => {
-      resolve(require('./Radio/Radio.vue'))
+      resolve(require('./_uiRadio/Radio.vue'))
+    })
+    // CheckBoxGroup CheckBox
+    Vue.component('UiCheckboxGroup', (resolve) => {
+      resolve(require('./_uiCheckbox/CheckboxGroup.vue'))
+    })
+    Vue.component('UiCheckbox', (resolve) => {
+      resolve(require('./_uiCheckbox/Checkbox.vue'))
     })
   }
-
 }

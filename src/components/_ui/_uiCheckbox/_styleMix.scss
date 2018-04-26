@@ -1,8 +1,10 @@
-@mixin ui-radio-group {
+@mixin ui-checkbox-group {
+  ._ui-checkbox-group {
+  }
 }
 
-@mixin ui-radio {
-  ._ui-radio {
+@mixin ui-checkbox {
+  ._ui-checkbox {
     display: inline-flex;
     align-items: center;
     padding-right: pxRem(10);
@@ -19,25 +21,24 @@
 
 
     &.checked {
-      .radio-icon {
+      .checkbox-icon {
         border-color: #4cd864;
         i {
-          background: #4cd864;
+          visibility: visible;
+          color: #4cd864;
         }
       }
-
     }
 
     &.disabled {
       @include disabled;
     }
 
-    .radio-icon {
-      display: inline-flex;
+    .checkbox-icon {
+      display: flex;
       align-items: center;
-      justify-content: center;
       border: 1px solid #ccc;
-      border-radius: 50%;
+      border-radius: 4px;
       z-index: 1;
       pointer-events: none;
 
@@ -47,17 +48,18 @@
 
 
       i {
-        display: inline-block;
-        width: pxRem(8);
-        height: pxRem(8);
-        border-radius: pxRem(4);
+        font-size: pxRem(14);
+        line-height: 0;
+        width: 0;
+        height: 0;
+        visibility: hidden;
 
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
       }
     }
-    .radio-text {
+    .checkbox-text {
       margin-left: 1px;
-      font-size: pxRem(14);
+      font-size: pxRem(13);
       color: #666;
       pointer-events: none;
     }
