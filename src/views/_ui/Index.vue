@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="fl" style="width: 20%">
+    <ul class="fl" style="width: 20%; min-width: 250px">
       <li><router-link :to="{name: '_uiButton'}">ui-button</router-link></li>
       <li><router-link :to="{name: '_uiRadio'}">ui-radio</router-link></li>
       <li><router-link :to="{name: '_uiCheckbox'}">ui-checkbox</router-link></li>
