@@ -1,8 +1,9 @@
 //////////////////////////////////////////////////////////////////
 // px or rem config
-$_uiUseRem: false !default;
+// 【 $_uiUseRem & $_uiRemDesignSketchWidth 】已经移植到 src/assets/javascripts/_share_scss_vars.js
+//$_uiUseRem: false !default;
 // rem模式 该值应该和rem.js函数传递的值保持一致, 值参考拿到效果图的宽度
-$_uiRemDesignSketchWidth: 375 !default;
+//$_uiRemDesignSketchWidth: 375 !default;
 @function pxRem($px) {
   @if $_uiUseRem {
     // 这里的375是默认值，因为框架就是按375设计的，不需要更改

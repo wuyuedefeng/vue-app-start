@@ -67,7 +67,15 @@ exports.cssLoaders = function (options) {
           resources: path.resolve(__dirname, '../src/assets/stylesheets/_global/**/*.scss')
         }
       }
-    ),
+    ).concat(// Reads Sass vars from files in the options property
+      {
+        loader: "@epegzz/sass-vars-loader", options: {
+        syntax: 'scss',
+        files: [
+          // Option 3) Load vars from JavaScript file
+          path.resolve(__dirname, '../src/assets/javascripts/_share_scss_vars.js')
+        ]}
+    }),
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
   }
