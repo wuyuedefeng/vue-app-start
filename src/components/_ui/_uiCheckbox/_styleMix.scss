@@ -44,11 +44,10 @@
 
       width: pxRem(20);
       height: pxRem(20);
-      margin-right: pxRem(3);
-
 
       i {
         font-size: pxRem(14);
+        padding: pxRem(1);
         line-height: 0;
         width: 0;
         height: 0;
@@ -58,7 +57,7 @@
       }
     }
     .checkbox-text {
-      margin-left: 1px;
+      margin-left: pxRem(4);
       font-size: pxRem(13);
       color: #666;
       pointer-events: none;
