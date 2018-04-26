@@ -17,8 +17,8 @@ npm run dev
 ```
 
 ## PX & Rem
-default: `px`, if wanna use `rem`, please change `/src/assets/stylesheets/_global/vars.scss`
-`$_uiUseRem`：`true`  
+default: `px`, if wanna use `rem`, please change `/src/assets/javascripts/_share_scss_vars.js`
+`_uiUseRem`：`true`  
 
 ## Components
 - Button
