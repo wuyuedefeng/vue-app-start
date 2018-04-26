@@ -20,5 +20,9 @@ export default {
     Vue.component('UiCheckbox', (resolve) => {
       resolve(require('./_uiCheckbox/Checkbox.vue'))
     })
+    // HorizontalNotice
+    Vue.component('UiMarqueeNotice', (resolve) => {
+      resolve(require('./_uiMarqueeNotice/MarqueeNotice.vue'))
+    })
   }
 }
