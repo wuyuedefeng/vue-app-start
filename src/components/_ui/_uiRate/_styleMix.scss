@@ -1,0 +1,18 @@
+@mixin ui-rate {
+  ._ui-rate {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    .top-star {
+      position: absolute;
+      top: 0; left: 0;
+      overflow: hidden;
+      white-space:nowrap;
+      width: 45%;
+    }
+    .bottom-star {
+      color: #999;
+    }
+  }
+}
+

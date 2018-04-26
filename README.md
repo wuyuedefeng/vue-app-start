@@ -24,6 +24,7 @@ default: `px`, if wanna use `rem`, please change `/src/assets/javascripts/_share
 - Button
 - Radio
 - Checkbox
+- Rate
 - MarqueeNotice
 - RollNotice
 - Popup

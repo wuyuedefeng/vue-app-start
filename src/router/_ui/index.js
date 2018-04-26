@@ -4,6 +4,7 @@ export default [
     { path: '/_ui/_uiButton', name: '_uiButton', component: (resolve) => { require(['@/views/_ui/_uiButton/Index.vue'], resolve) } },
     { path: '/_ui/_uiRadio', name: '_uiRadio', component: (resolve) => { require(['@/views/_ui/_uiRadio/Index.vue'], resolve) } },
     { path: '/_ui/_uiCheckbox', name: '_uiCheckbox', component: (resolve) => { require(['@/views/_ui/_uiCheckbox/Index.vue'], resolve) } },
+    { path: '/_ui/_uiRate', name: '_uiRate', component: (resolve) => { require(['@/views/_ui/_uiRate/Index.vue'], resolve) } },
     { path: '/_ui/_uiMarqueeNotice', name: '_uiMarqueeNotice', component: (resolve) => { require(['@/views/_ui/_uiMarqueeNotice/Index.vue'], resolve) } },
     { path: '/_ui/_uiRollNotice', name: '_uiRollNotice', component: (resolve) => { require(['@/views/_ui/_uiRollNotice/Index.vue'], resolve) } },
     { path: '/_ui/_uiPopup', name: '_uiPopup', component: (resolve) => { require(['@/views/_ui/_uiPopup/Index.vue'], resolve) } },

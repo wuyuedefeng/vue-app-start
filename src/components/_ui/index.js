@@ -28,5 +28,9 @@ export default {
     Vue.component('UiRollNotice', (resolve) => {
       resolve(require('./_uiRollNotice/RollNotice.vue'))
     })
+    // Rate
+    Vue.component('UiRate', (resolve) => {
+      resolve(require('./_uiRate/Rate.vue'))
+    })
   }
 }
