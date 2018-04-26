@@ -1,6 +1,7 @@
 /* eslint-disable */
 export default [
   { path: '/_ui', name: '_uiHome', component: (resolve) => { require(['@/views/_ui/Index.vue'], resolve) }, children: [
+    { path: '/_ui/_uiRadio', name: '_uiRadio', component: (resolve) => { require(['@/views/_ui/_uiRadio/Index.vue'], resolve) } },
     { path: '/_ui/_uiButton', name: '_uiButton', component: (resolve) => { require(['@/views/_ui/_uiButton/Index.vue'], resolve) } },
     { path: '/_ui/_uiPopup', name: '_uiPopup', component: (resolve) => { require(['@/views/_ui/_uiPopup/Index.vue'], resolve) } },
     { path: '/_ui/_uiDialog/messageBox', name: '_uiDialog', component: (resolve) => { require(['@/views/_ui/_uiDialog/Index.vue'], resolve) }, children: [

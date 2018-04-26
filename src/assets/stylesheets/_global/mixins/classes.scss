@@ -1,8 +1,8 @@
 @mixin disabled {
   cursor: default;
-  opacity: .3;
+  opacity: .5;
   &:active {
-    opacity: .3;
+    opacity: .5;
   }
 }
 
