@@ -24,5 +24,9 @@ export default {
     Vue.component('UiMarqueeNotice', (resolve) => {
       resolve(require('./_uiMarqueeNotice/MarqueeNotice.vue'))
     })
+    // RollNotice
+    Vue.component('UiRollNotice', (resolve) => {
+      resolve(require('./_uiRollNotice/RollNotice.vue'))
+    })
   }
 }

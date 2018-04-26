@@ -5,6 +5,7 @@ export default [
     { path: '/_ui/_uiRadio', name: '_uiRadio', component: (resolve) => { require(['@/views/_ui/_uiRadio/Index.vue'], resolve) } },
     { path: '/_ui/_uiCheckbox', name: '_uiCheckbox', component: (resolve) => { require(['@/views/_ui/_uiCheckbox/Index.vue'], resolve) } },
     { path: '/_ui/_uiMarqueeNotice', name: '_uiMarqueeNotice', component: (resolve) => { require(['@/views/_ui/_uiMarqueeNotice/Index.vue'], resolve) } },
+    { path: '/_ui/_uiRollNotice', name: '_uiRollNotice', component: (resolve) => { require(['@/views/_ui/_uiRollNotice/Index.vue'], resolve) } },
     { path: '/_ui/_uiPopup', name: '_uiPopup', component: (resolve) => { require(['@/views/_ui/_uiPopup/Index.vue'], resolve) } },
     { path: '/_ui/_uiDialog/messageBox', name: '_uiDialog', component: (resolve) => { require(['@/views/_ui/_uiDialog/Index.vue'], resolve) }, children: [
       { path: '/_ui/_uiDialog/messageBox', name: '_uiDialog-MessageBox', component: (resolve) => { require(['@/views/_ui/_uiDialog/MessageBox.vue'], resolve) } },

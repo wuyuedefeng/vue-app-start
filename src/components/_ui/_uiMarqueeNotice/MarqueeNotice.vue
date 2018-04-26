@@ -1,5 +1,5 @@
 <template>
-  <marquee :behavior="behavior" :direction="direction" :scrollamount="speed">
+  <marquee class="_ui-marquee-notice" :behavior="behavior" :direction="direction" :scrollamount="speed">
     <slot></slot>
   </marquee>
 </template>
@@ -26,5 +26,3 @@ export default {
   }
 }
 </script>
-
-<!--<WapScrollNotice>hahhahhahah</WapScrollNotice>-->
