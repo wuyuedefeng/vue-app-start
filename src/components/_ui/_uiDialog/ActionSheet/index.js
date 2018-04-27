@@ -32,7 +32,7 @@ ActionSheet.install = function (Vue, options) {
     window.addEventListener('hashchange', hashChange)
     window.addEventListener('popstate', hashChange)
 
-    actionSheet.closeActionSheet = (item) => {
+    actionSheet.close = (item) => {
       const el = actionSheet.$el
       el.classList.add('leave')
       pageScroll.unlock(el)

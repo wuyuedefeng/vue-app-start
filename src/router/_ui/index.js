@@ -15,5 +15,6 @@ export default [
       { path: '/_ui/_uiDialog/actionSheet', name: '_uiDialog-ActionSheet', component: (resolve) => { require(['@/views/_ui/_uiDialog/ActionSheet.vue'], resolve) } }
     ]},
     { path: '/_ui/_uiCounterNumber', name: '_uiCounterNumber', component: (resolve) => { require(['@/views/_ui/_uiCounterNumber/Index.vue'], resolve) } },
+    { path: '/_ui/_uiLoadingBar', name: '_uiLoadingBar', component: (resolve) => { require(['@/views/_ui/_uiLoadingBar/Index.vue'], resolve) } },
   ]}
 ]
