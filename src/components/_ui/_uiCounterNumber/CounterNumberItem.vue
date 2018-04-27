@@ -3,7 +3,7 @@
     <div :style="{height: height + unit, lineHeight: height + unit}" v-if="!isNumber">
       <slot :number="number"></slot>
     </div>
-    <div class="wrap" :style="styles">
+    <div class="wrap" :style="styles" ref="transRef">
       <div :style="{height: height + unit, lineHeight: height + unit}" v-for="(fill,index) in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]" :key="index">
         <slot :number="fill"></slot>
       </div>
@@ -61,7 +61,7 @@ export default {
   watch: {
     number (newVal, oldVal) {
       if (this.isNumber) {
-        setTimeout(() => { this.goValue(newVal, oldVal) }, 100)
+        this.goValue(newVal, oldVal)
       } else {
         this.setTranslate(0, 0)
       }
@@ -75,29 +75,43 @@ export default {
         this.setTranslate(0, (-oldVal - 10) * this.height)
       }
     },
-    setTranslate (speed, translate) {
+    setTranslate (speed, translate, afterDo) {
       this.styles.transitionDuration = speed + 'ms'
       this.styles.transform = `translate3d(0, ${translate}${this.unit}, 0)`
+      if (afterDo) {
+        let el = this.$refs['transRef']
+        let transitionend = (ev) => {
+          afterDo(ev)
+          el.removeEventListener('transitionend', transitionend)
+        }
+        el.addEventListener('transitionend', transitionend, false)
+      }
     },
     goValue (newVal, oldVal = 0) {
       this.init(newVal, oldVal)
       setTimeout(() => {
         if (this.direction === 'up') {
           if (newVal > oldVal) {
-            this.setTranslate(this.speed, -newVal * this.height)
+            this.setTranslate(this.speed, -newVal * this.height, () => {
+              this.setTranslate(0, -newVal * this.height)
+            })
           } else {
-            this.setTranslate(this.speed, (-newVal - 10) * this.height)
+            this.setTranslate(this.speed, (-newVal - 10) * this.height, () => {
+              this.setTranslate(0, -newVal * this.height)
+            })
           }
-          setTimeout(() => { this.setTranslate(0, -newVal * this.height) }, this.speed + 100)
         } else {
           if (newVal < oldVal) {
-            this.setTranslate(this.speed, (-newVal - 10) * this.height)
+            this.setTranslate(this.speed, (-newVal - 10) * this.height, () => {
+              this.setTranslate(0, (-newVal - 10) * this.height)
+            })
           } else {
-            this.setTranslate(this.speed, -newVal * this.height)
+            this.setTranslate(this.speed, -newVal * this.height, () => {
+              this.setTranslate(0, (-newVal - 10) * this.height)
+            })
           }
-          setTimeout(() => { this.setTranslate(0, (-newVal - 10) * this.height) }, this.speed + 100)
         }
-      }, 100)
+      }, 10)
     }
   },
   mounted () {

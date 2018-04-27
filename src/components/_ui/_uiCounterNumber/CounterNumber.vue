@@ -1,6 +1,6 @@
 <template>
   <div class="_ui-counter-number" :style="{height: height + unit}">
-    <ui-counter-number-item v-for="(num,index) in calcNumbers" :key="calcNumbersCount-index" :number="num" :height="height" :speed="speed + delayEach * index" :direction="direction" :is-plus="isPlus">
+    <ui-counter-number-item v-for="(num,index) in calcNumbers" :key="calcNumbersCount-index" :number="num" :height="height" :unit="unit" :speed="speed + delayEach * index" :direction="direction" :is-plus="isPlus">
       <template slot-scope="{number}">
         <slot :number="number">{{number}}</slot>
       </template>

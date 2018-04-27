@@ -15,6 +15,12 @@
           <span style="display: inline-block; background: #999; width: 50px; height: 50px; line-height: 50px; color: #f00; font-size: 30px">{{number}}</span>
         </template>
       </ui-counter-number>
+      <h3>height="30" unit="rem" & custom view</h3>
+      <ui-counter-number :number="number1" height="20" unit="rem">
+        <template slot-scope="{number}">
+          <span style="display: inline-block; background: #999; width: 10rem; color: #f00; font-size: 10rem">{{number}}</span>
+        </template>
+      </ui-counter-number>
     </div>
     <hr>
     <a href="https://github.com/wuyuedefeng/vue-app-start/blob/develop/src/views/_ui/_uiCounterNumber/Index.vue" target="_blank">demo code</a>
