@@ -19,7 +19,7 @@ export default {
       let loading1 = this._ui._uiDialog.ToastBox.new({icon: 'icon-loading', callback: () => { console.log('closed') }})
       setTimeout(function () {
         loading1.close()
-      }, 30000)
+      }, 3000)
     },
     // new 几个相同的identify，就需要调用多少次 close 方法
     usage2 () {
