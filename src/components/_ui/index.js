@@ -32,5 +32,9 @@ export default {
     Vue.component('UiRate', (resolve) => {
       resolve(require('./_uiRate/Rate.vue'))
     })
+    // Switch
+    Vue.component('UiSwitch', (resolve) => {
+      resolve(require('./_uiSwitch/Switch.vue'))
+    })
   }
 }

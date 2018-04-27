@@ -1,0 +1,115 @@
+@mixin ui-switch {
+  ._ui-switch {
+    position: relative;
+    display: inline-block;
+    width: pxRem(52);
+    min-width: pxRem(52);
+    height: pxRem(32);
+    min-height: pxRem(32);
+    border: pxRem(1) solid #d9d9d9;
+    border-radius: pxRem(16);
+    box-sizing: border-box;
+    background: #d9d9d9;
+    overflow: hidden;
+
+    &.is-long {
+      width: pxRem(62);
+      .switch-inner-wrap {
+        &.checked {
+          .switch-core {
+            &:after {
+              transform: translateX(pxRem(30));
+            }
+          }
+        }
+        .switch-label {
+          width: pxRem(24);
+        }
+      }
+    }
+
+    &.is-longer {
+      width: pxRem(72);
+      .switch-inner-wrap {
+        &.checked {
+          .switch-core {
+            &:after {
+              transform: translateX(pxRem(40));
+            }
+          }
+        }
+        .switch-label {
+          width: pxRem(34);
+        }
+      }
+    }
+
+    .switch-inner-wrap {
+      display: flex;
+      justify-content: flex-start;
+      .switch-input {
+        display: none;
+      }
+      .switch-core {
+        display: inline-block;
+        /*position: relative;*/
+
+        .before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: transform .3s,-webkit-transform .3s;
+          border-radius: pxRem(15);
+          width: 100%;
+          height: pxRem(30);
+          background-color: #fdfdfd;
+        }
+        &:after {
+          width: pxRem(30);
+          height: pxRem(30);
+          background-color: #fff;
+          box-shadow: 0 pxRem(1) pxRem(3) rgba(0,0,0,.4);
+          content: " ";
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          border-radius: pxRem(15);
+          transition: transform .3s ease, -webkit-transform .3s ease;
+          cursor: pointer;
+        }
+      }
+      &.checked {
+        .switch-core {
+          .before {
+            transform: scale(0);
+          }
+          &:after {
+            transform: translateX(pxRem(20));
+          }
+        }
+      }
+      &.disabled {
+        @include disabled;
+      }
+      .switch-label {
+        position: absolute;
+        right: pxRem(5);
+        line-height: pxRem(32);
+        font-size: pxRem(12);
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        &:empty {
+          margin-left: 0;
+        }
+      }
+      &.checked {
+        .switch-label {
+          left: pxRem(5);
+          right: auto;
+        }
+      }
+    }
+  }
+}
