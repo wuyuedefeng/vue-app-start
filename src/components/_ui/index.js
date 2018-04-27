@@ -36,5 +36,9 @@ export default {
     Vue.component('UiSwitch', (resolve) => {
       resolve(require('./_uiSwitch/Switch.vue'))
     })
+    // CounterNumber
+    Vue.component('UiCounterNumber', (resolve) => {
+      resolve(require('./_uiCounterNumber/CounterNumber.vue'))
+    })
   }
 }

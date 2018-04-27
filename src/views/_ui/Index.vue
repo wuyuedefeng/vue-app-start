@@ -10,6 +10,7 @@
       <li><router-link :to="{name: '_uiRollNotice'}">ui-roll-notice</router-link></li>
       <li><router-link :to="{name: '_uiPopup'}">ui-popup</router-link></li>
       <li><router-link :to="{name: '_uiDialog'}">ui-dialog</router-link></li>
+      <li><router-link :to="{name: '_uiCounterNumber'}">ui-counter-number</router-link></li>
     </ul>
     <div style="overflow: hidden">
       <router-view></router-view>

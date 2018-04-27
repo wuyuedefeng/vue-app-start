@@ -13,6 +13,7 @@ export default [
       { path: '/_ui/_uiDialog/messageBox', name: '_uiDialog-MessageBox', component: (resolve) => { require(['@/views/_ui/_uiDialog/MessageBox.vue'], resolve) } },
       { path: '/_ui/_uiDialog/toastBox', name: '_uiDialog-ToastBox', component: (resolve) => { require(['@/views/_ui/_uiDialog/ToastBox.vue'], resolve) } },
       { path: '/_ui/_uiDialog/actionSheet', name: '_uiDialog-ActionSheet', component: (resolve) => { require(['@/views/_ui/_uiDialog/ActionSheet.vue'], resolve) } }
-    ]}
+    ]},
+    { path: '/_ui/_uiCounterNumber', name: '_uiCounterNumber', component: (resolve) => { require(['@/views/_ui/_uiCounterNumber/Index.vue'], resolve) } },
   ]}
 ]

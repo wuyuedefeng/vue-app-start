@@ -32,3 +32,4 @@ default: `px`, if wanna use `rem`, please change `/src/assets/javascripts/_share
 - dialog/MessageBox
 - dialog/ToastBox
 - dialog/ActionSheet
+- CounterNumber
